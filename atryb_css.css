@@ -1,0 +1,32 @@
+p.a1[align] {
+font-size: 20px;
+text-align: left;
+color: magenta;
+
+}
+p.a2[align] {
+color: red;
+font-size:20px;
+
+}
+p.a3[align] {
+color:red
+
+}
+p.a4[align] {
+font-size: 15px;
+
+}
+p.a5[align] {
+color: white;
+font-size: 25px;
+}
+
+h3.id2[title~="opis"] {
+color:red;
+background-color:white;
+border:3px dotted red;
+font-size:30pt;
+
+
+}

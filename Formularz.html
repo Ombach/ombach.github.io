@@ -3,7 +3,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <head>
-<title>Formularz</title>
+<title>multimedia</title>
 </head>
 <body>
 	<div style="background-color:grey;">
@@ -23,11 +23,20 @@
 		<a href="Formularz.html"> formularz </a> </br>
 		<a href="Formularz_Ombach.html"> Formularz_Ombach </a> </br>
 		<a href="multimedia.html"> multimedia </a> </br>
-
+		
 			
 		<h3>CSS</h3>
 		<a href="wlasciwosci_css.html"> wlasciwosci_css </a> </br>
 		<a href="identyfikator.html"> indentyfikator </a> </br>
+		<a href="pseudoelem.html"> pseudo_elementy  </a> </br>
+		<a href="tabela_css.html"> tabela_css </a> </br>
+		
+		
+		<h3>Selektory</h3>
+		<a href="selek_atryb.html"> selektor atrybotow </a> </br>
+		<a href="selek_elem.html"> selektor elementow </a> </br>
+		
+		
 		
 		<h3>DOKUMENT</h3>
 			<a href="doc/ListaGrupy2C.docx" target="new">Lista grupy II w 2c</a><br/>
@@ -42,58 +51,109 @@
 			<a href="multimedia.html"> multimedia </a> </br>
 
 </div>
-<div style="float:right;width:70%;">
-<p><form action="szymoombach@gmail.com" method="post" >
-
-<p> IMIE i Nazwisko: <input type="text" name="nazwisko_i_imie" size="30"  /></p>
-<p> Adres email: <input type="text" name="email:  value="email@gmail.com" size="60" /></p>
-<p> Hasło: <input type="password" id="haslo" maxlength="16" /> </p>
-
-<p> --PŁEĆ-- </p>
-<p><input type="radio" name="plec" value="Oprogramowanie"/> Oprogramowanie </p>
-<p><input type="radio" name="plec" value="System"  /> System </p>
-
-<p>--PŁEĆ--</p>
-<p><label for="Oprogramowanie"> Oprogramowanie </label>
-	<input type="radio" name="plec" id="Oprogramowanie" value="Oprogramowanie" > </br>
-<p><label for="System"> System </label>
-	<input type="radio" name="plec" id="System" value="System" > </br>
-
-
-<p> ---JĘZYKI, KTÓRYMI WŁADASZ: ---</p></legend>
-<p> <input type="checkbox" id="nazwa_jezyki" value="wartosc_angielski" checked="checked"  /> ANG </p>
-<p> <input type="checkbox" id="nazwa_jezyki" value="wartosc_niemiecki" /> NIE </p>
-<p> <input type="checkbox" id="nazwa_jezyki" value="wartosc_chinski" /> CHN </p>
-
-<p><select name="nazwa_owoce" size="5" multiple="multiple">
-<optgroup label="ULUBIONE OWOCE">
-<option value="truskawki" /> TRUSKAWKI
-<option value="banany" /> BANANY
-<option value="maliny" selected /> MALINY </optgroup> </select></p>
-
-<p><input list="blok" name="przegladarki" />  
-	  <datalist id="blok">
 		
-    		<option value="Internet Explorer">
-  		<option value="Firefox">
-	 	<option value="Chrome">
+		
+		
+		
+		
+		
+<div style="float:right;width:70%;">
+<form action="onclick" method="post" enctype="multipart/form-data">
+<font size="6"><p><center> FORMULARZ KONTAKTOWY </center></p></font>
+<p> IMIĘ I NAZWISKO <input type="text" name"nazwisko_i_imie" size="30" /></p>
+<p> ADRES EMAIL <input type="text" name"email" value="email@gmail.com" /></p>
+<p> HASŁO <input type="password" id="haslo" maxlength="10"/></p>
+</form>
+
+</br>
+<hr>
+</br>
+
+<form action="onclick" method="post" enctype="multipart/form-data">
+<p> PŁEĆ (bez etykiety label)</p>
+<p><input type="radio" name="plec" id="mezczyzna" value="mezczyzna"> MĘŻCZYZNA </p>
+<p><input type="radio" name="plec" id="kobieta" value="kobieta" > KOBIETA </p>
+</form>
+
+</br>
+<hr>
+</br>
+
+<form action="onclick" method="post" enctype="multipart/form-data">
+<p> PLEĆ (z etykietą label) </p>
+<p><label for="male"> mężczyzna </label>
+        <input type="radio"  name="gender" id="male"  value="mezczyzna" > <br/>
+        <label for="famale"> kobieta </label>
+        <input type="radio"  name="gender" id="famale"  value="kobieta" > <br/> </p>
+</form>
+
+</br>
+<hr>
+</br>
+
+<form action="onclick" method="post" enctype="multipart/form-data">
+<p> JĘZYKI, KTÓRYMI WŁADASZ: </p>
+	<p><input type="checkbox" name="nazwa_jezyka" value="wartosc_ang" checked/> ANG </p>
+	<p><input type="checkbox" name="nazwa_jezyka" value="wartosc_nie" > NIE </p>
+	<p><input type="checkbox" name="nazwa_jezyka" value="wartosc_chn" > CHN </p>
+</form>
+
+</br>
+<hr>
+</br>
+
+<p><select name="nazwa_owoce" size="4" multiple>
+	<optgroup label="ULUBIONE OWOCE">
+		<option value="truskawki" />TRUSKAWKI
+		<option value="banany" />BANANY
+		<option value="maliny" />MALINY
+	</optgroup>
+</select>
+</p>
+
+</br>
+<hr>
+</br>
+
+<form action="onclick" method="post" enctype="multipart/form-data">
+<p><input list="blok" name="przegladarki"/>
+	<datalist id="blok">
+		<option value="Internet Explorer">
+		<option value="Firefox">
+		<option value="Chrome">
 		<option value="Opera">
-		<option value="Safari">
-	  </datalist>   <input type="submit" name="prześlij">  </p>	
-	  
-	  <p><select id="days[ ]" name="days[ ]" size="7" multiple="multiple">
-<optgroup label="DNI WOLNE">
-<option> SOBOTA </option>
-<option> NIEDZIELA </option> </optgroup>
-<optgroup label="DNI ROBOCZE">
-<option> PONIEDZIAŁEK </option>
-<option> WTOREK </option>
-<option> SRODA </option>
-<option> CZWARTEK </option>
-<option> PIATEK </option> </optgroup> </select></p>
-	
+		<option value="Safiri">
+	</datalist> <input type="submit" name="Prześlij">
+</form>
+
+</br>
+<hr>
+</br>
+
+<form action="onclick" method="post" enctype="multipart/form-data">
 <p>
-<textarea cols="50" rows="6 ">
+<select id="days[]" name="days[]" size="7" multiple>
+	<optgroup label="DNI WOLNE">
+		<option> SOBOTA </option>
+		<option> NIEDZIELA </option>
+	</optgroup>
+	<optgroup label="DNI ROBOCZE">
+		<option> PONIEDZIAŁEK </option>
+		<option> WTOREK </option>
+		<option> ŚRODA </option>
+		<option> CZWARTEK </option>
+		<option> PIĄTEK </option>
+	</optgroup>
+</select>
+</p>
+</form>
+
+
+</br>
+<hr>
+</br>
+
+</p><textarea cols="60" rows="6">
 Jan Niezbędny
 ul. Nieznana 3
 40-001 Katowice
@@ -106,138 +166,61 @@ Polska
 Wprowadz swój adres
 </textarea>
 </p>
-<p><input type="reset" id="q"  /> - PRZYCISK RESETOWANIA - input (odswieza formularz)</p>
-<p><input type="button" name="leavel" value="Opusc stronę!"/> - input </p>
 
-<p><button type="button" name="" onclick="alert('Hola')"> Click me! </button> - button </p>
-<p><input type="file" name="leavel" value="Przeglšdaj!"/> - input </p>
+</br>
+<hr>
+</br>
 
-<fieldset>
-<legend> WYKSZTAŁCENIE:  </legend>
-<p><input type="radio" name="gr_op" value="Podstawowe" accesskey="P" /> Podstawowe [skrót ALT+P] <br />
-<input type="radio" name="gr_op" value="rednie" accesskey="S" /> Srednie [skrót ALT+S] <br />
-<input type="radio" name="gr_op" value="Wyższe" accesskey="W" /> Wyższe [skrót ALT+W] </p>
-</fieldset>
-<br />
-<p><input type="hidden" name="nazwa " value="google" /> </p>
+<p><button type="reset" id="reset" />RESET</button></p>
+<p><input type="button" name="leave" value="Opusc stronę!"/></p>
 
-<input type="image" name="nazwa" src="foty/jaszczur.jpg" />   <br/>
+<p><button type="button" id="kupteraz" name="przycisk_zakupu" onclick="alert('zakupiono')"> Kup teraz! </button></p>
 
+</br>
+<hr>
+</br>
 
+<p>wyślij plik <input type="file"> </p>
 
-<p> PRZYCISK WYSYŁANIA I CZYSZCZENIA PÓL <br />
+</br>
+<hr>
+</br>
 
-<input type="submit" value="wyslij" />    -  PRZYCISK PRZESYŁANIA - input  <br />
+<legend> WYKSZTAŁCENIE </legend> 
+<p><input type="radio" name="gr_op" value="Podstawowe" accesskey="P" /> Podstawowe [skrót ALT+P] </br>
+<p><input type="radio" name="gr_op" value="Podstawowe" accesskey="S" /> Podstawowe [skrót ALT+S] </br>
+<p><input type="radio" name="gr_op" value="Podstawowe" accesskey="W" /> Podstawowe [skrót ALT+W] </p>
 
-<input type="reset" value="wyczysc" />  -  PRZYCISK RESETOWANIA (odswieza formularz) - input <br />
-</p>
+</br>
+<hr>
+</br>
+<p><button type="submit" name="obrazek"><img src="foty/jaszczur.jpg" width="200px"> </img></button></p>
 
+</br>
+<hr>
+</br>
 
-<p>
-PRZYCISKI BUTTON <br />  
-<button type="submit" name="przycisk1"> Wyslij !  </button> <br />
-<button type="reset" name="przycisk2" > Usuń  </button><br />
-<button type="button" name="przycisk3" onclick="alert("NIE moge ")" style="font: 12pt arial; background:red;" /> Powrót  </button><br /></p>
+<p><input type="submit" value="wyslij"></p>
+<p><input type="reset" value="wyczysc"></p>
 
-<p>Do BUTTONU MOŻNA WSTAWIĆ OBRAZEK (tabelkę i inne elementy)<br/>
-<button type="submit" name="OBRAZEK"> <img src="foty/jaszczur.jpg"  alt="formularz"> </button> </p>
-</font>
+</br>
+<hr>
+</br>
 
+<p> PRZYCISKI BUTTON</p>
+<p><button type="submit" name="przycisk1"> Wyślij </button></p>
+<p><button type="reset" name="przycisk2"> Usuń </button></p>
+<p><button type="button" name="przycisk3" style="font:12pt arial; background:red;"> Powrót </button></p>
 
-<fieldset>
-<legend>
-USPRAWNIENIA W FORMULARZACH [HTML 5]
-</legend>
-Atrybut autofocus automatycznie ustawia kursor w wybranym polu formularza
-<input name="adres" type="text" autofocus />   <br />
-Atrybut autocomplete [on badz off] służy do wyłšczenia badz włšczenia autouzupełniania
-<input name="adres" type="text" autocomplete="on" />   
-<br />
-Lista proponowanych warosci wyswietlana, jako lista rozwijalna.
-<input name="blok" type="text" list="jezyki" /> 
-<datalist id="jezyki" >
-<option> Angielski </option>
-<option> Francuski </option>
-</datalist> <input type="submit" name="Prześlij">
-<br />
-<br />
-<br />
-<br />
-Atrybut sprawdzajacy wypełnienie pola. Jeżeli pole formularza będzie puste, nie zostanie on zatwierdzony. <input type="text" required />  
-<br />
-TYPY PÓL W HTML5 DO WPROWADZANIA DANYCH:
-<input type="email" value="nazwa@gmail.com"> - wprowadzenie adresu e-mail <br />
-<input type="url"> - wprowadzanie adresu URL <br />
-<input type="number" min="1" max="7" step="1" value="2"> - wprowadzanie liczby calkowitej z podanego przydzialu <br />
-<input type="date" value="2015-10-30"> - do wprowadzania daty <br />
-<input type="color" value="#F0F0F0"> - do wprowadzania koloru <br />
-	Wybierz twój uluiony kolor: <input type="color" name="favcolor" value="#ff0000" /> <br />
-	<input type="submit" value="wyślij zapytanie" />
-<input type="range" name="points" min="0" max="10"> - suwak 
-<br />
+</br>
+<hr>
+</br>
 
-<br />
-Lista proponowanych wartosci wyswietlana, jako lista rozwijalna.
-<input list="blok" name="przegladarki" />
-<datalist id="blok">
-<option value="Internet Explorer">
-<option value="Firefox">
-<option value="Chrome"> 
-<option value="Opera"> 
-<option value="Safari"> 
-</datalist> <input type="submit" name="Prześlij">
-<br />
-<br />
-<br />
-<br />
-<br />
-</form>
-Element wyjsciowy przedstawia wynik obliczenia <br/>
-<form action="/action_page.php"
-oninput="x.value=parseInt(a.value)+parseInt(b.value)">
-  0
-  <input type="range" id="a" name="a" value="50">
-  100 +
-  <input type="number" id="b" name="b" value="50">
-  =
-  <output name="x" for="a b"></output>
-  <br><br>
-  <input type="submit">
-</form>
+<p><button type="submit" name="obrazek"><img src="foty/jaszczur.jpg" width="200px"> </img></button></p>
 
-<br/>
-<input type="text" name="firstname" value="Arthur" disabled> BLOKUJE POLE - NIE DA SIE W NIM PISAC - DISABLED <br />
-<br />
-
-
-
-
-
-
-
-
-
-<br />
-<br />
-<br />
-<br />
-
-<h2> zdarzenie unfocus oraz onblur </h2>
-<p> Po "wejściu" do pola input, funkcja ustawia kolor tła na żółty </p>
-<p> Po "opuszczeniu pola input, funkcja ustawia kolor tła na czerwony </p>
-
-wpisz swoje imie i nazwisko:
-<input type="text" id="myinput" onfocus="focusfunction()" onblur="blurfunction()">
-<script>
-function focusfunction() { 
-	documnet.gotElementyBID ("myinput").style.background="yellow"
-}
-
-function focusfunction() { 
-	documnet.gotElementyBID("myinput").style.background="red
-}
-</script>
-
+</br>
+<hr>
+</br>
 
 
 
@@ -248,7 +231,10 @@ function focusfunction() {
 
 
 </div>
-<div style="background-color:grey;clear:both;"><center>&copy;S.O,October 2024 
-</center></div>
+<div style="background-color:grey;clear:both;">
+<center>&copy;S.O,October 2024 </center></div>
+</div>	
+	
+	
 </body>
 </html>
